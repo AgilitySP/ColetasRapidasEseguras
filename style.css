@@ -1,0 +1,199 @@
+/* ESTILOS GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* CABEÇALHO */
+header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FF6B00;
+}
+
+.logo span {
+    color: #0056B3;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FF6B00;
+}
+
+/* SEÇÃO HERO */
+.hero {
+    padding: 150px 0 100px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('imagens/motoboy.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* BOTÕES */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin: 10px 5px;
+}
+
+.btn:hover {
+    background-color: #128C7E;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #FF6B00;
+}
+
+.btn-secondary:hover {
+    background-color: #E05A00;
+}
+
+/* SOBRE NÓS */
+.about {
+    background-color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about h2 {
+    color: #0056B3;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.about p {
+    margin-bottom: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+}
+
+/* CONTATO */
+.contact {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #0056B3;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.contact p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .hero {
+        padding: 130px 0 80px;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+}
